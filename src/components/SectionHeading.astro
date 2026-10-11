@@ -1,0 +1,10 @@
+---
+// Full-width section heading with an accent underline, placed above the section content.
+import { siteConfig } from "../config";
+const { title } = Astro.props;
+---
+
+<div class="mb-8 sm:mb-10">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">{title}</h2>
+  <div class="w-[75px] h-[5px] mt-3 rounded-full" style={`background-color: ${siteConfig.accentColor}`}></div>
+</div>

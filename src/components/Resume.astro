@@ -1,0 +1,23 @@
+---
+import { siteConfig } from "../config";
+import ArrowIcon from "./ArrowIcon.astro";
+import SectionHeading from "./SectionHeading.astro";
+
+const resumeUrl = siteConfig.resumeUrl ?? "/resume.pdf"; // Resume link is set in config.ts; this is just a backup
+---
+
+<section id="resume" class="px-6 sm:px-10 md:px-16 py-14 md:py-20 scroll-mt-16">
+  <div class="max-w-5xl mx-auto">
+    <SectionHeading title="Resume" />
+
+    <a
+      href={resumeUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group flex items-center justify-between bg-white/70 hover:bg-white rounded-2xl border border-gray-200 hover:border-gray-300 shadow-sm hover:shadow-lg p-5 sm:p-6 md:p-7 transition-all duration-300 hover:-translate-y-0.5"
+    >
+      <h3 class="text-lg sm:text-xl font-semibold text-gray-900">View Resume</h3>
+      <ArrowIcon />
+    </a>
+  </div>
+</section>

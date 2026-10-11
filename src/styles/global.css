@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* Tell Tailwind where to scan for classes, including .md files */
+@source "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}";
+
+/* Enable Tailwind Typography so .prose works */
+@plugin "@tailwindcss/typography";
+
+/* ---------- Lauren's theme ---------- */
+@theme {
+  /* Calibri where installed; Carlito (a free, metric-matched Calibri clone) everywhere else */
+  --font-sans: Calibri, Carlito, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  /* Sage-tinted neutrals: every gray/slate class on the site picks these up */
+  --color-gray-50:  #f5f8f6;
+  --color-gray-100: #ebf1ee;
+  --color-gray-200: #d8e3dd;
+  --color-gray-300: #bccdc5;
+  --color-gray-400: #8fa69b;
+  --color-gray-500: #6b8278;
+  --color-gray-600: #52665d;
+  --color-gray-700: #3f504a;
+  --color-gray-800: #2c3a35;
+  --color-gray-900: #1e2925;
+  --color-gray-950: #121915;
+
+  --color-slate-50:  #f5f8f6;
+  --color-slate-100: #ebf1ee;
+  --color-slate-200: #d8e3dd;
+  --color-slate-300: #bccdc5;
+  --color-slate-400: #8fa69b;
+  --color-slate-500: #6b8278;
+  --color-slate-600: #52665d;
+  --color-slate-700: #3f504a;
+  --color-slate-800: #2c3a35;
+  --color-slate-900: #1e2925;
+
+  /* Main accent from the resume */
+  --color-sage: #4f8277;
+
+  /* Smaller type scale for large headings (defaults in comments) */
+  --text-lg: 1.0625rem;   /* 1.125rem */
+  --text-xl: 1.1875rem;   /* 1.25rem */
+  --text-2xl: 1.375rem;   /* 1.5rem */
+  --text-3xl: 1.75rem;    /* 1.875rem */
+  --text-4xl: 2rem;       /* 2.25rem */
+  --text-5xl: 2.5rem;     /* 3rem */
+  --text-6xl: 3rem;       /* 3.75rem */
+  --text-7xl: 3.5rem;     /* 4.5rem */
+  --text-8xl: 4.25rem;    /* 6rem */
+}
+
+body {
+  background-color: #f2f6f3;
+  font-family: var(--font-sans);
+  color: var(--color-gray-900);
+}
+
+::selection {
+  background: #cfe0d8;
+}
+
+.prose a {
+  color: var(--color-sage);
+}
+
+hr {
+  border: none;
+  height: 4px;
+  background: var(--color-gray-400);
+  border-radius: 9999px;
+  margin: 2rem 0;
+}

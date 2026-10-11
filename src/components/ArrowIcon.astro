@@ -1,0 +1,18 @@
+---
+// Circular "open" arrow shown on clickable homepage cards.
+// Relies on a parent element with the `group` class for hover effects.
+---
+
+<div
+  class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 flex-shrink-0 rounded-full bg-gray-900 text-white flex items-center justify-center shadow-sm transition-all duration-300 group-hover:bg-gray-700"
+  aria-hidden="true"
+>
+  <svg
+    class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17" />
+  </svg>
+</div>
