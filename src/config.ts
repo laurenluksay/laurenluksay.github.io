@@ -14,7 +14,7 @@
   },
 
   aboutMe:
-    "Hi, welcome to my portfolio website! I’m Lauren, a fourth-year Engineering Physics student at the University of British Columbia. I’m passionate about mechanical design and robotics, and I’ve built hands-on experience across the full design process, from concept and CAD to prototyping, fabrication, and testing. I’m currently looking for co-op and internship opportunities where I can keep learning and contribute to meaningful engineering work. I’m always happy to connect with people and organizations working on interesting problems, so feel free to explore my work and reach out with any questions or opportunities.",
+    "I am a fourth-year Engineering Physics student at the University of British Columbia with a focus on mechanical design and robotics. Through design teams and project work, I have gained hands-on experience in CAD, prototyping, fabrication, and testing. I am currently seeking co-op and internship opportunities where I can continue to learn and contribute to meaningful engineering work.",
  
     skills: [
       "SolidWorks",
